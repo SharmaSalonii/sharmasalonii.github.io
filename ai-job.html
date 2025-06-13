@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Job Market Insights</title>
+  <style>
+    :root {
+      --dark-purple: #2a003f;
+      --cream: #fdfaf6;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--cream);
+      color: #1a1a1a;
+    }
+
+    .header {
+      background-color: var(--dark-purple);
+      color: white;
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .header h2 {
+      font-weight: normal;
+      font-size: 1.2rem;
+      color: #d1bdf4;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .content h3 {
+      color: #2a003f;
+      margin-top: 2rem;
+    }
+
+    .content h4 {
+      color: #444;
+      margin-top: 1.5rem;
+    }
+
+    .content p {
+      line-height: 1.7;
+      margin: 1rem 0;
+      font-size: 1.05rem;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 0.8rem;
+    }
+
+    .github {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .github a, .back-btn {
+      background-color: var(--dark-purple);
+      color: white;
+      text-decoration: none;
+      padding: 0.6rem 1.4rem;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    .github a:hover, .back-btn:hover {
+      background-color: #3a005c;
+    }
+
+    .back-container {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>📊 AI Job Market Insights</h1>
+    <h2>SQL-Powered Exploration of Global Hiring Trends</h2>
+  </div>
+
+  <div class="content">
+    <p><strong>🧠 About the Topic:</strong><br>
+    As Artificial Intelligence continues to reshape industries, the demand for skilled AI professionals is rapidly evolving. Understanding trends in job roles, required skills, salaries, and remote opportunities is crucial for job seekers, recruiters, and analysts. This project dives deep into AI job listings to uncover what the global AI job market truly looks like.</p>
+
+    <p><strong>🎯 Objective:</strong><br>
+    To analyze a dataset of AI-related job postings and extract actionable insights related to:</p>
+    <ul>
+      <li>In-demand roles and skills</li>
+      <li>Salary patterns across roles, locations, and industries</li>
+      <li>The impact of remote work, company size, and education on compensation</li>
+      <li>Temporal trends in job postings</li>
+    </ul>
+
+    <h3>⚙️ Process:</h3>
+    <h4>Data Preparation:</h4>
+    <ul>
+      <li>Converted raw date formats and reclassified remote ratio values into readable job types (On-site, Hybrid, Remote).</li>
+    </ul>
+
+    <h4>Data Cleaning:</h4>
+    <ul>
+      <li>Standardized columns, updated date values, and enabled safe SQL updates for accurate query processing.</li>
+    </ul>
+
+    <h4>Data Analysis using SQL:</h4>
+    <ul>
+      <li>Executed 25+ structured SQL queries categorized into:</li>
+      <ul>
+        <li>General Job Market Overview</li>
+        <li>Skills and Role Demand</li>
+        <li>Education & Experience Requirements</li>
+        <li>Company & Location Insights</li>
+        <li>Salary & Benefits Deep Dive</li>
+      </ul>
+    </ul>
+
+    <h3>📌 Key Insights:</h3>
+    <ul>
+      <li>🧑‍💻 Top Roles: Data Scientist, Machine Learning Engineer, and AI Researcher are the most common titles.</li>
+      <li>🌍 High-Paying Locations: Countries like the USA, Switzerland, and Germany offer the highest AI salaries.</li>
+      <li>🏠 Remote Work Influence: Remote roles offer slightly higher average salaries than on-site roles.</li>
+      <li>💡 Top Skills in Demand: Python, Machine Learning, and Deep Learning dominate job descriptions.</li>
+      <li>🎓 Education & Salary: Higher education (Master’s/PhD) is positively correlated with salary.</li>
+      <li>🏢 Company Trends: Large companies offer better salaries and benefits but fewer remote roles compared to startups.</li>
+      <li>📈 Job Posting Trends: A steady increase in AI job postings over recent years, indicating strong market demand.</li>
+    </ul>
+
+    <h3>🧾 Conclusion:</h3>
+    <p>
+      This SQL-based project effectively showcases how structured query language can unlock valuable insights from real-world hiring data. It equips decision-makers with the knowledge to align recruitment strategies and helps aspiring AI professionals understand where and how to focus their career development. The project demonstrates not only technical SQL skills but also business-oriented thinking and data storytelling.
+    </p>
+
+    <div class="github">
+      <a href="https://github.com/SharmaSalonii/Personal-Projects/tree/main/AI%20Jobs%20Analysis" target="_blank">🔗 View on GitHub</a>
+    </div>
+
+    <div class="back-container">
+      <a class="back-btn" href="index.html">← Back to Home</a>
+    </div>
+  </div>
+
+</body>
+</html>
