@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EV Sales & Forecasting Analysis</title>
+  <style>
+    :root {
+      --dark-purple: #2a003f;
+      --cream: #fdfaf6;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--cream);
+      color: #1a1a1a;
+    }
+
+    .header {
+      background-color: var(--dark-purple);
+      color: white;
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .header h2 {
+      font-weight: normal;
+      font-size: 1.2rem;
+      color: #d1bdf4;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .content h3 {
+      margin-top: 2rem;
+      color: #2a003f;
+    }
+
+    .content h4 {
+      margin-top: 1.5rem;
+      color: #444;
+    }
+
+    .content p {
+      line-height: 1.7;
+      margin: 1rem 0;
+      font-size: 1.05rem;
+    }
+
+    ul {
+      margin-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.8rem;
+    }
+
+    .github {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .github a {
+      background-color: var(--dark-purple);
+      color: white;
+      text-decoration: none;
+      padding: 0.6rem 1.4rem;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .github a:hover {
+      background-color: #3a005c;
+    }
+    .back-btn {
+  margin-top: 1rem;
+  display: inline-block;
+  background-color: var(--dark-purple);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-btn:hover {
+  background-color: #3a005c;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>EV SALES & FORECASTING</h1>
+    <h2>A Data-Driven Look at India’s Electric Future</h2>
+  </div>
+
+  <div class="content">
+    <p>
+      Electric Vehicles (EVs) represent a major shift in the global transportation industry, offering an eco-friendly alternative to traditional fossil fuel-powered vehicles. EVs reduce greenhouse gas emissions, improve energy efficiency, and support the move toward renewable energy sources.
+    </p>
+
+    <p>
+      India is witnessing rapid EV adoption, especially in two-wheelers and public transport, driven by government incentives, rising fuel costs, and growing environmental awareness. With infrastructure and battery tech improving, EVs are no longer the future—they are the present.
+    </p>
+
+    <h3>🧠 About the Project:</h3>
+    <p>
+      This project combines EV sales trends, forecasting, charging infrastructure, and resource estimation to give a 360° view of the EV landscape in India and globally. It uses SQL for data wrangling and Power BI for dashboards.
+    </p>
+
+    <h3>🎯 Objective:</h3>
+    <ul>
+      <li>Analyze EV sales by year, brand, region, and category</li>
+      <li>Forecast future EV sales using SQL + Power BI</li>
+      <li>Compare renewable vs non-renewable energy trends in EV adoption</li>
+      <li>Estimate lithium, copper, cobalt, etc. for EV battery production</li>
+      <li>Assess growth of public charging infrastructure (India + Global)</li>
+    </ul>
+
+    <h3>⚙️ How I Processed It:</h3>
+    <h4>📊 SQL Analysis:</h4>
+    <ul>
+      <li>Created a yearly_sales table with 10 years of EV data</li>
+      <li>Used LAG() for YoY growth and market share analysis</li>
+      <li>Extracted insights from global sales and infrastructure datasets</li>
+    </ul>
+
+    <h4>📈 Power BI Dashboard:</h4>
+    <ul>
+      <li>Visualized top manufacturers, categories, regions, YoY sales trends</li>
+      <li>Built forecast visuals and dynamic filters (region, vehicle type, year)</li>
+    </ul>
+
+    <h4>🧮 Resource Estimation:</h4>
+    <ul>
+      <li>Estimated number of EVs producible from available reserves</li>
+      <li>Assessed per-EV material need vs total global reserves</li>
+    </ul>
+
+    <h3>📌 Key Insights:</h3>
+    <ul>
+      <li>🔋 Over 44 lakh EVs sold in India between 2015–2024</li>
+      <li>2W (Two-Wheelers) dominate; Ola Electric holds 10.78% market share</li>
+      <li>China leads globally in EV sales and charging points</li>
+      <li>India has 12,146 charging stations; Europe is the global leader</li>
+      <li>Global reserves can support:
+        <ul>
+          <li>1.4B EVs with Lithium</li>
+          <li>11B with Copper</li>
+          <li>6.6B with Graphite</li>
+          <li>375B with Aluminum</li>
+          <li>Copper is the most limiting non-renewable resource</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>✅ Conclusion:</h3>
+    <p>
+      This dashboard blends business, tech, and sustainability into one story. It reflects how data tools like SQL and Power BI can be used to inform smarter decisions in the real world—especially for a greener future.
+    </p>
+
+    <div class="github">
+      <a href="https://github.com/SharmaSalonii/Personal-Projects/tree/main/Ev%20sales%20and%20forecast" target="_blank">🔗 View on GitHub</a>
+    </div>
+
+    <div style="text-align: center;">
+      <a class="back-btn" href="index.html">← Back to Home</a>
+    </div>
+  </div>
+
+</body>
+</html>
+
