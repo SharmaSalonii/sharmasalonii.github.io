@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Google Shopping Analysis</title>
+  <style>
+    :root {
+      --dark-purple: #2a003f;
+      --cream: #fdfaf6;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--cream);
+      color: #1a1a1a;
+    }
+
+    .header {
+      background-color: var(--dark-purple);
+      color: white;
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .header h2 {
+      font-weight: normal;
+      font-size: 1.2rem;
+      color: #d1bdf4;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    h3 {
+      margin-top: 2rem;
+      color: #2a003f;
+    }
+
+    h4 {
+      margin-top: 1.5rem;
+      color: #444;
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 1.05rem;
+      margin: 1rem 0;
+    }
+
+    ul {
+      margin-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.8rem;
+    }
+
+    .github {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .github a {
+      background-color: var(--dark-purple);
+      color: white;
+      text-decoration: none;
+      padding: 0.6rem 1.4rem;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .github a:hover {
+      background-color: #3a005c;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin: 2rem auto 0;
+      padding: 0.7rem 1.5rem;
+      background-color:var(--dark-purple);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .back-btn:hover {
+      background-color: #009fb3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>CLICKS, CARTS & CONVERSIONS</h1>
+    <h2>Cracking the Code of Google Shopping</h2>
+  </div>
+
+  <div class="content">
+    <h3>🎯 About the project</h3>
+    <p>
+      As e-commerce grows, so does the complexity of customer decision-making. This project explores product listing patterns on Google Shopping to uncover how pricing, reviews, and seller behavior affect customer trust and conversions.To investigate patterns in Google Shopping product listings using real e-commerce data—understanding how pricing, ratings, reviews, and seller behavior influence customer decisions. The aim was to build a data-backed story around product trust, pricing efficiency, and platform performance using Python, SQL, and Power BI.
+    </p>
+
+    <h3>📖 Chapter 1: Scraping the Shelves of Google Shopping</h3>
+    <p>
+      The journey began with data scraped from Google Shopping using the SerpAPI, a real-time data scraping API. Each entry represented a product listing with details such as:
+    </p>
+    <ul>
+      <li>Product title</li>
+      <li>Price and old price</li>
+      <li>Category</li>
+      <li>Seller platform (Amazon, Flipkart, etc.)</li>
+      <li>Rating and number of reviews</li>
+      <li>Extra fields like snippets, tags, and extracted price values</li>
+    </ul>
+    <p>
+      The raw dataset mimicked what customers actually see on Google’s product search. But like any stockroom—it was messy. So the first step was rolling up our sleeves for a deep clean using SQL.
+    </p>
+
+    <h3>🧪 Chapter 2: The Alchemy of Cleaning & Calculating</h3>
+    <p>Inside SQL, I gave the data a makeover:</p>
+    <ul>
+      <li>Removed unnecessary columns like snippet, extracted prices, and tags</li>
+      <li>Cleaned the price fields by stripping off “$” and commas and converted them into numbers</li>
+      <li>Handled missing values</li>
+      <li>Created a discount % column using old price and new price</li>
+      <li>Normalized formats and ensured consistency across categories and sellers</li>
+    </ul>
+    <p>
+      The dataset was finally shaped for deeper analysis—ready to answer questions that even the sellers weren’t asking.
+    </p>
+
+    <h3>📌 Key Insights:</h3>
+    <ul>
+      <li>💸 High discounts didn't guarantee high ratings. Many low-rated products were heavily discounted.</li>
+      <li>🔍 A few products had extremely high reviews but poor ratings—a potential flag for fake reviews.</li>
+      <li>🛍️ Mobile accessories and electronics dominated in quantity, but not necessarily in trust.</li>
+      <li>⭐ Premium-priced items had better ratings overall, hinting at a price-quality perception.</li>
+      <li>🏷️ Categories like Furniture and Beauty had fewer listings, but higher average revenue per product.</li>
+    </ul>
+
+    <h3>✅ Conclusion:</h3>
+    <p>
+      What started as a random list of products became a story of shopper psychology and platform economics. This project showed how real-time product data from Google Shopping could be transformed into:
+    </p>
+    <ul>
+      <li>Smarter pricing strategies</li>
+      <li>Cleaner, more trust-building listings</li>
+      <li>Seller performance benchmarking</li>
+      <li>Category-specific insights for inventory planning</li>
+    </ul>
+    <p>
+      With SQL’s precision and Power BI’s storytelling, this wasn’t just another product catalog—it became a data detective story of the digital shelf.
+    </p>
+    </div>
+
+</body>
+</html>
+<h3>🖼️ Dashboard Snapshot</h3>
+<div style="text-align: center; margin-top: 1rem;">
+  <img src="D:\chrome download\OneDrive\Pictures\{0F581247-B59A-47FD-833C-AE19BFD8ED24}.png" alt="Google Shopping Dashboard" style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+</div>
+
+<div class="github">
+  <a href="https://github.com/SharmaSalonii/Personal-Projects/tree/main/Google%20Shopping%20Analysis" target="_blank">🔗 View on GitHub</a>
+</div>
+<div style="text-align: center;">
+      <a class="back-btn" href="index.html">← Back to Home</a>
+    </div>
