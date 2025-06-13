@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Superstore Sales & Profitability</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --dark-purple: #2a003f;
+      --cream: #fdfaf6;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--cream);
+      color: #1a1a1a;
+    }
+
+    .header {
+      background-color: var(--dark-purple);
+      color: white;
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .header h2 {
+      font-weight: normal;
+      font-size: 1.2rem;
+      color: #d1bdf4;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .content h3 {
+      margin-top: 2rem;
+      color: #2a003f;
+    }
+
+    .content h4 {
+      margin-top: 1.5rem;
+      color: #444;
+    }
+
+    .content p {
+      line-height: 1.7;
+      margin: 1rem 0;
+      font-size: 1.05rem;
+    }
+
+    ul {
+      margin-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.8rem;
+    }
+
+    .github {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .github a {
+      background-color: var(--dark-purple);
+      color: white;
+      text-decoration: none;
+      padding: 0.6rem 1.4rem;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .github a:hover {
+      background-color: #3a005c;
+    }
+
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem 0;
+      scroll-snap-type: x mandatory;
+      scroll-padding: 1rem;
+    }
+
+    .carousel img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      scroll-snap-align: center;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel::-webkit-scrollbar {
+      display: none;
+    }
+
+    .back-btn {
+      margin-top: 1rem;
+      display: inline-block;
+      background-color: var(--dark-purple);
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    .back-btn:hover {
+      background-color: #3a005c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>📊 Superstore Sales & Profitability Analysis</h1>
+    <h2>Decoding the Superstore Saga</h2>
+  </div>
+
+  <div class="content">
+
+    <p><strong>🧭 Objective:</strong><br>
+    To uncover patterns in retail performance by diving deep into the Superstore dataset. This project leverages data storytelling, visualization, and analysis to identify sales trends, profit drivers, and regional performance to help decision-makers boost profitability and streamline operations.</p>
+
+    <h3>Chapter 1: Aisles of Opportunity</h3>
+    <p>Step inside the digital storefront where rows of data tell a tale of customer behavior, regional quirks, product preferences, and operational costs. Using Python, SQL, and Power BI, I started by cleaning the dataset—handling nulls, formatting columns, and preparing the foundation for intelligent insights.</p>
+
+    <h3>Chapter 2: The Alchemy of Analysis</h3>
+    <p>Data came to life through visual storytelling:</p>
+    <ul>
+      <li>📊 <strong>Sales vs. Profit Heatmaps</strong> showed where high revenue masked low profits.</li>
+      <li>📈 <strong>Segment-wise Profitability</strong> revealed how the "Home Office" segment was the silent hero.</li>
+      <li>🚚 <strong>Ship Mode & Delivery Analysis</strong> uncovered delivery delays impacting customer satisfaction.</li>
+      <li>🛒 <strong>Category & Sub-category Deep Dive</strong> guided inventory and discount strategies.</li>
+      <li>🌍 <strong>Regional Dashboards</strong> exposed which states were carrying the store—and which were dragging it down.</li>
+    </ul>
+
+    <h3>🔍 Key Insights:</h3>
+    <ul>
+      <li>📉 <strong>High Sales ≠ High Profit</strong>: Technology products had high sales but suffered from thin margins.</li>
+      <li>🚚 <strong>Standard Class shipping</strong> had the highest usage but also contributed to delayed deliveries.</li>
+      <li>🌎 <strong>West region</strong> emerged as the most profitable, while the South showed growth potential.</li>
+      <li>🪙 <strong>Discount strategy</strong> needed refinement: Deeper discounts didn’t always translate to higher sales volume.</li>
+      <li>🧾 <strong>Furniture category</strong> underperformed despite occupying a large share of stock and display.</li>
+    </ul>
+
+    <h3>🎯 Conclusion:</h3>
+    <p>The Superstore isn’t just a retail setup—it’s a mirror reflecting strategic choices. Through this project, I demonstrated how visual analytics and pattern detection can drive better business decisions. This dashboard and analysis could serve real-world retail managers looking to make smarter stock, shipping, and discounting decisions.</p>
+
+    <!-- 🖼️ Screenshots Carousel Section (Now at End) -->
+    <h3>🖼️ Dashboard Snapshots</h3>
+    <div class="carousel">
+      <img src="D:\chrome download\OneDrive\Pictures\{2224648C-CDBF-4045-A725-AF9C93F66C23}.png" alt="Dashboard Screenshot 1">
+      <img src="D:\chrome download\OneDrive\Pictures\{A444D019-8617-4AF5-9AE0-5F25B9D21D0A}.png" alt="Dashboard Screenshot 2">
+      <img src="D:\chrome download\OneDrive\Pictures\{F13E3A61-D880-434D-8C19-A00214531F13}.png" alt="Dashboard Screenshot 3">
+      <img src="D:\chrome download\OneDrive\Pictures\{DFD0670A-388A-4DDA-A0FD-330D8A65AB71}.png" alt="Dashboard Screenshot 3">
+    </div>
+
+    <div class="github">
+  <a href="https://github.com/SharmaSalonii/Personal-Projects/tree/main/Superstore" target="_blank">🔗 View on GitHub</a>
+</div>
+    <div style="text-align: center;">
+      <a class="back-btn" href="index.html">← Back to Home</a>
+    </div>
+  </div>
+
+</body>
+</html>
